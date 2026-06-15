@@ -1,0 +1,33 @@
+# SiRa Service GmbH
+
+> Servicepartner für Wärmepumpenheizungsanlagen. Die SiRa Service GmbH (rechtlich: SiRA zwanzigzehn GmbH, Düsseldorf) bietet Wartungsverträge, technische Betreuung und Onlineüberwachung für Wärmepumpen. Drei Pakete (Basic 29 €, Basic+ 39 €, Premium 59 € pro Monat) mit planbaren Kosten, Garantie und Allgefahrenversicherung im Premium.
+
+Wichtige Hinweise:
+- Sprache der Webseite: ausschließlich Deutsch.
+- Vertragslaufzeit: zunächst 12 Monate, danach automatische Verlängerung um jeweils 12 Monate, maximale Laufzeit 15 Jahre.
+- Zahlung per SEPA-Lastschrift, monatlich.
+
+## Seiten
+
+- [Startseite](https://www.hallo-sira.de/): Überblick, Pakete, Leistungen, Vertragsdetails und Kontakt.
+- [Leistungen](https://www.hallo-sira.de/leistungen): Wartungsleistungen im Detail – Sichtprüfung, Flüssigkeitskreislauf, Ventile und Filter, Elektrik, spezifische Prüfungen, Kältemittelkreislauf, Onlineüberwachung, Dokumentation.
+- [Pakete](https://www.hallo-sira.de/pakete): Basic, Basic+ und Premium im Detail mit allen enthaltenen Leistungen.
+- [Kontakt & Anfrage](https://www.hallo-sira.de/kontakt): Mehrstufiges Anfrageformular für einen Wartungsvertrag.
+
+## Pakete
+
+- Basic – 29,00 € pro Monat: zuverlässige Basiswartung, Wartung im jährlichen Turnus.
+- Basic+ – 39,00 € pro Monat: erweiterte Kontrollen und intensivere Prüfungen.
+- Premium – 59,00 € pro Monat: Rundumschutz inkl. Garantie, Allgefahrenversicherung, jährlicher Fernabfrage und großer Wartung alle 3 Jahre vor Ort.
+
+## Rechtliches
+
+- [Impressum](https://www.hallo-sira.de/impressum)
+- [Datenschutz](https://www.hallo-sira.de/datenschutz)
+- [Barrierefreiheit](https://www.hallo-sira.de/barrierefreiheit)
+
+## Kontakt
+
+- Telefon: +49 211 651137
+- E-Mail: info@hallo-sira.de
+- Adresse: Ronsdorfer Str. 53, 40233 Düsseldorf
