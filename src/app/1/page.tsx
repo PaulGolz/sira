@@ -11,7 +11,7 @@ export default function Version1() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-[#2a2a2a] bg-[#0e0e0e]/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-4 sm:px-10">
-          <Wordmark className="text-xl" />
+          <Wordmark className="h-7" />
           <nav className="hidden items-center gap-8 md:flex">
             {nav.map((n) => (
               <a
@@ -104,8 +104,8 @@ export default function Version1() {
             Wartungspakete
           </h2>
           <p className="max-w-md text-[#b5b5b5]">
-            Vom einfachen Wartungsvertrag bis zum umfassenden Premium-Schutz mit
-            Garantie und Allgefahrenversicherung.
+            Basic nur Wartung, Basic+ mit Fernüberwachung – bis zu 15 Jahre Garantie
+            nur im Premium Vollkasko.
           </p>
         </div>
 

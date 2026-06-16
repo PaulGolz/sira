@@ -11,7 +11,7 @@ export default function Version7() {
       {/* Header, etwas größer */}
       <header className="sticky top-0 z-40 border-b border-[#2a2a2a] bg-[#0e0e0e]/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 sm:px-10">
-          <Wordmark className="text-4xl" />
+          <Wordmark className="h-12" />
           <nav className="hidden items-center gap-12 md:flex">
             {nav.map((n) => (
               <a

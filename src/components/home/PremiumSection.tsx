@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { premiumVorteile } from "@/lib/content";
+import { premiumHighlightsHeading, premiumIntro, premiumVorteile } from "@/lib/content";
 import { SectionImage } from "@/components/home/SectionImage";
 
 export function PremiumSection() {
@@ -15,27 +15,29 @@ export function PremiumSection() {
             className="object-cover"
           />
           <div className="absolute bottom-0 left-0 bg-[#4493f8] px-5 py-3 text-sm font-extrabold uppercase text-[#0e0e0e]">
-            Premium-Schutz
+            Premium Vollkasko
           </div>
         </div>
         <div className="flex items-center px-5 py-16 sm:px-8 lg:px-12">
           <div>
             <span className="text-sm font-extrabold uppercase tracking-widest text-[#4493f8]">
-              Umfassendster Schutz
+              Premium Vollkasko
             </span>
             <h2 className="mt-3 text-3xl font-extrabold uppercase sm:text-5xl">
               Premium-Vorteile
             </h2>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-[#b5b5b5]">
-              Maximale Kostensicherheit mit Garantie, Allgefahrenversicherung und
-              großer Wartung alle drei Jahre – alles im Paket enthalten.
+              {premiumIntro}
             </p>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-[1600px] px-5 py-20 sm:px-8">
-        <div className="grid grid-cols-1 gap-px bg-[#2a2a2a] sm:grid-cols-2">
+        <h3 className="text-3xl font-extrabold uppercase sm:text-4xl">
+          {premiumHighlightsHeading}
+        </h3>
+        <div className="mt-10 grid grid-cols-1 gap-px bg-[#2a2a2a] sm:grid-cols-2">
           {premiumVorteile.map((vorteil) => (
             <div key={vorteil.titel} className="bg-[#0e0e0e] p-7 sm:p-9">
               <span className="text-3xl font-extrabold text-[#4493f8]">/</span>

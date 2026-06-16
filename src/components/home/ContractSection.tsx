@@ -4,7 +4,8 @@ import { renderHighlighted, type Mark } from "@/components/ui/Highlight";
 
 const detailMarks: Record<string, Mark[]> = {
   Vertragslaufzeit: [
-    { phrase: "zunächst 12 Monate", color: "blue" },
+    { phrase: "zunächst 36 Monate", color: "blue" },
+    { phrase: "Mindestlaufzeit für alle Pakete beträgt 3 Jahre", color: "green" },
     { phrase: "jeweils 12 Monate", color: "green" },
     { phrase: "maximale Vertragslaufzeit beträgt 15 Jahre", color: "amber" },
     { phrase: "6 Monate zum Vertragsende", color: "violet" },
@@ -18,8 +19,10 @@ const detailMarks: Record<string, Mark[]> = {
     { phrase: "Ersatztermin", color: "amber" },
   ],
   Gewährleistung: [
-    { phrase: "regelmäßig und fachgerecht", color: "green" },
-    { phrase: "vollständig integriert", color: "violet" },
+    { phrase: "ausschließlich Wartung", color: "blue" },
+    { phrase: "nur im Premium Vollkasko", color: "amber" },
+    { phrase: "Bis zu 15 Jahre Garantie", color: "violet" },
+    { phrase: "Versicherungspolice", color: "green" },
   ],
 };
 

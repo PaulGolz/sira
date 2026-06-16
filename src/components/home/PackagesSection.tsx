@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Paket } from "@/lib/content";
-import { pakete } from "@/lib/content";
+import { pakete, paketeHeading } from "@/lib/content";
 import { diagonalCut } from "@/lib/styles";
 
 function PackageCard({ paket }: { paket: Paket }) {
@@ -71,8 +71,8 @@ export function PackagesSection() {
     <section id="pakete" className="bg-white text-[#0e0e0e]">
       <div className="mx-auto max-w-[1600px] px-5 pb-20 sm:px-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <h2 className="text-4xl font-extrabold uppercase leading-none sm:text-6xl">
-            Drei Pakete
+          <h2 className="max-w-3xl text-2xl font-extrabold uppercase leading-tight sm:text-3xl">
+            {paketeHeading}
           </h2>
           <Link
             href="/pakete"

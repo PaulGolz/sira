@@ -58,7 +58,7 @@ export default function DatenschutzPage() {
         <p>
           Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren,
           verarbeiten wir die von Ihnen angegebenen Daten (Name, E-Mail-Adresse,
-          optional Telefon, optional gewünschtes Paket, Nachricht), um Ihre
+          Telefon, Ort, optional gewünschtes Paket, Nachricht), um Ihre
           Anfrage zu bearbeiten.
         </p>
         <p>

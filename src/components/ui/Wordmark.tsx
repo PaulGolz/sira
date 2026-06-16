@@ -1,20 +1,17 @@
-export function Wordmark({
-  className = "",
-  accent = "#4493f8",
-}: {
-  className?: string;
-  accent?: string;
-}) {
+import Image from "next/image";
+
+const LOGO_WIDTH = 831;
+const LOGO_HEIGHT = 283;
+
+export function Wordmark({ className = "h-8" }: { className?: string }) {
   return (
-    <span
-      className={`inline-flex items-baseline font-extrabold leading-none tracking-tight ${className}`}
-      aria-label="SiRa"
-    >
-      <span>S</span>
-      <span className="mx-[0.04em] inline-block -skew-x-12" style={{ color: accent }}>
-        /
-      </span>
-      <span>RA</span>
-    </span>
+    <Image
+      src="/logo-sira-wordmark.png"
+      alt="SiRa"
+      width={LOGO_WIDTH}
+      height={LOGO_HEIGHT}
+      className={`w-auto ${className}`}
+      priority
+    />
   );
 }

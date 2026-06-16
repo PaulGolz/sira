@@ -114,7 +114,7 @@ export default function LeistungenPage() {
 
         <div className="mt-12 sm:mt-14">
           <ImageBand
-            src="/h10.jpg"
+            src="/h10_new_2.jpg"
             alt="Handwerker bei der Wartung einer Wärmepumpe im Außenbereich"
             label="Wartung vor Ort"
           />

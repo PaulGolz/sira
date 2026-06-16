@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { firma, wizardSteps } from "@/lib/content";
@@ -182,6 +182,54 @@ function ContactStep({
   answers: Record<string, string>;
   onSubmit: () => void;
 }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setError(null);
+    setIsSubmitting(true);
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/kontakt", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          telefon: formData.get("telefon"),
+          ort: formData.get("ort"),
+          nachricht: formData.get("nachricht"),
+          ...answers,
+        }),
+      });
+
+      const data = (await response.json().catch(() => null)) as
+        | { error?: string }
+        | null;
+
+      if (!response.ok) {
+        throw new Error(
+          data?.error ??
+            "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+        );
+      }
+
+      onSubmit();
+    } catch (submitError) {
+      setError(
+        submitError instanceof Error
+          ? submitError.message
+          : "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <div>
       <div className="text-center">
@@ -207,13 +255,7 @@ function ContactStep({
         )}
       </div>
 
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          onSubmit();
-        }}
-        className="mt-8"
-      >
+      <form onSubmit={handleSubmit} className="mt-8">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div>
             <label htmlFor="name" className={labelClass}>
@@ -236,25 +278,27 @@ function ContactStep({
           </div>
           <div>
             <label htmlFor="telefon" className={labelClass}>
-              Telefon
+              Telefon *
             </label>
             <input
               id="telefon"
               name="telefon"
               type="tel"
+              required
               className={fieldClass}
-              placeholder="Optional"
+              placeholder="Ihre Telefonnummer"
             />
           </div>
           <div>
             <label htmlFor="ort" className={labelClass}>
-              Ort
+              Ort *
             </label>
             <input
               id="ort"
               name="ort"
+              required
               className={fieldClass}
-              placeholder="Optional"
+              placeholder="Ihr Wohnort"
             />
           </div>
         </div>
@@ -283,11 +327,18 @@ function ContactStep({
           </span>
         </label>
 
+        {error && (
+          <p className="mt-5 rounded border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+            {error}
+          </p>
+        )}
+
         <button
           type="submit"
-          className={`mt-7 w-full bg-[#4493f8] px-8 py-4 text-base font-extrabold uppercase text-[#0e0e0e] transition-colors hover:bg-[#6cb4ff] ${cutClass}`}
+          disabled={isSubmitting}
+          className={`mt-7 w-full bg-[#4493f8] px-8 py-4 text-base font-extrabold uppercase text-[#0e0e0e] transition-colors hover:bg-[#6cb4ff] disabled:cursor-not-allowed disabled:opacity-60 ${cutClass}`}
         >
-          Anfrage senden
+          {isSubmitting ? "Wird gesendet …" : "Anfrage senden"}
         </button>
       </form>
     </div>

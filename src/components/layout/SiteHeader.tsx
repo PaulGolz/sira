@@ -21,7 +21,7 @@ export function SiteHeader({
     <header className="sticky top-0 z-40 border-b border-white/80 bg-[#0e0e0e]">
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" aria-label="Zur Startseite">
-          <Wordmark className="text-2xl" />
+          <Wordmark className="h-8" />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">

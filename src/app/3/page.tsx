@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { VersionSwitcher } from "@/components/prototypes/VersionSwitcher";
 import { Wordmark } from "@/components/ui/Wordmark";
-import { heroClaim, aboutText } from "@/lib/content";
+import { heroClaim, aboutText, firma } from "@/lib/content";
 
 const features = [
   {
@@ -19,8 +19,8 @@ const features = [
   {
     img: "/h6.png",
     label: "Premium Schutz",
-    titel: "Garantie und Allgefahrenversicherung",
-    text: "Im Premium-Paket sind alle Arbeiten und Verschleißteile enthalten. Maximale Sicherheit und planbare Kosten für Ihre Heizungsanlage.",
+    titel: "Premium Vollkasko",
+    text: "Im Premium Vollkasko sind alle Arbeiten und Verschleißteile enthalten. Bis zu 15 Jahre Garantie – maximale Sicherheit und planbare Kosten für Ihre Heizungsanlage.",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function Version3() {
       {/* Header */}
       <header className="absolute left-0 right-0 top-0 z-40">
         <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-6 sm:px-12 sm:py-7">
-          <Wordmark className="text-3xl" />
+          <Wordmark className="h-10" />
           <nav className="hidden items-center gap-10 text-base font-medium text-white/80 md:flex">
             {["Über uns", "Leistungen", "Pakete", "Kontakt"].map((n) => (
               <a key={n} href="#" className="hover:text-white">
@@ -39,10 +39,10 @@ export default function Version3() {
             ))}
           </nav>
           <a
-            href="#kontakt"
+            href={firma.telefonHref}
             className="hidden text-base font-semibold text-white hover:text-white/80 md:inline"
           >
-            +49 211 651137
+            {firma.telefon}
           </a>
           <button
             aria-label="Menü öffnen"

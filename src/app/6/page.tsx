@@ -11,7 +11,7 @@ export default function Version6() {
       {/* Header */}
       <header className="absolute left-0 right-0 top-0 z-40">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 sm:px-10">
-          <Wordmark className="text-3xl" />
+          <Wordmark className="h-10" />
           <nav className="hidden items-center gap-10 md:flex">
             {nav.map((n) => (
               <a

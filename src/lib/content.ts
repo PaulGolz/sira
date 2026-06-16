@@ -9,19 +9,20 @@ export type Paket = {
   features: string[];
 };
 
+export const paketeHeading = "Drei Wartungspakete für Ihre Heizungsanlage";
+
 export const pakete: Paket[] = [
   {
     name: "Basic",
     preis: "29,00 €",
     intervall: "pro Monat",
     turnus: "Wartung im jährlichen Turnus",
-    claim: "Die zuverlässige Basiswartung für Ihre Wärmepumpe.",
+    claim: "Nur Wartung.",
     features: [
       "Sichtprüfung der Wärmepumpe",
       "Kontrolle auf Schäden und Leckagen",
       "Prüfung von Systemdruck und Systemtemperatur",
       "Kontrolle von Steuerung und Regelung",
-      "Onlineüberwachung und Effizienzcontrolling",
     ],
   },
   {
@@ -29,13 +30,11 @@ export const pakete: Paket[] = [
     preis: "39,00 €",
     intervall: "pro Monat",
     turnus: "Wartung im jährlichen Turnus",
-    claim: "Erweiterte Kontrollen für eine genauere technische Prüfung.",
+    claim: "Alle Leistungen aus Basic – plus digitale Betreuung.",
     features: [
       "Alle Leistungen aus Basic",
-      "Erweiterte Kontrolle der Anlage",
-      "Intensivere Prüfung nach Checkliste",
-      "Besondere Prüfungen je nach Wärmepumpentyp",
-      "Zusätzliche Kontrolle wichtiger Anlagenbereiche",
+      "Onlineüberwachung",
+      "Effizienzcontrolling",
     ],
   },
   {
@@ -43,15 +42,15 @@ export const pakete: Paket[] = [
     preis: "59,00 €",
     intervall: "pro Monat",
     turnus: "Jährliche Fernabfrage, große Wartung alle 3 Jahre vor Ort",
-    claim: "Maximaler Schutz mit Garantie und Allgefahrenversicherung.",
+    claim: "Premium Vollkasko – maximaler Schutz mit Garantie und Allgefahrenversicherung.",
     highlight: true,
-    badge: "Umfassendster Schutz",
+    badge: "Premium Vollkasko",
     features: [
-      "Alle Leistungen aus Basic und Basic+",
-      "Alle Arbeiten und Verschleißteile im Preis enthalten",
-      "Garantie und Allgefahrenversicherung",
+      "Alle Leistungen aus Basic+",
       "Jährliche technische Fernabfrage",
-      "Große Wartung alle 3 Jahre vor Ort",
+      "Onlineüberwachung",
+      "Garantieverlängerung um jeweils 1 Jahr",
+      "Bis zu 15 Jahre Garantie möglich",
     ],
   },
 ];
@@ -73,7 +72,7 @@ export const paketeDetail: PaketDetail[] = [
     preis: "29,00 €",
     intervall: "pro Monat",
     einleitung:
-      "Der Basic-Vertrag umfasst die Basiswartung Ihrer Wärmepumpe. Enthalten sind grundlegende Prüfungen und Wartungsarbeiten, damit Ihre Anlage regelmäßig kontrolliert und technisch betreut wird.",
+      "Der Basic-Vertrag umfasst ausschließlich Wartung Ihrer Wärmepumpe. Enthalten sind grundlegende Prüfungen und Wartungsarbeiten. Onlineüberwachung und Effizienzcontrolling sind nicht enthalten.",
     gruppen: [
       {
         titel: "Sichtprüfung & Anlage",
@@ -106,23 +105,16 @@ export const paketeDetail: PaketDetail[] = [
           "Jährliche Dichtheitsprüfung bei Flüssigkeitskreisläufen über 3 kg",
         ],
       },
-      {
-        titel: "Onlineüberwachung",
-        punkte: [
-          "Onlineüberwachung und Effizienzcontrolling",
-          "Kontrolle von Verbrauchs- und Heizverhalten",
-        ],
-      },
     ],
     hinweis:
-      "Verschleißteile und besondere Arbeitszeiten werden nach Bedarf zusätzlich berechnet.",
+      "Basic umfasst ausschließlich Wartung – ohne Onlineüberwachung und ohne Effizienzcontrolling. Verschleißteile und besondere Arbeitszeiten werden nach Bedarf zusätzlich berechnet.",
   },
   {
     name: "Basic+",
     preis: "39,00 €",
     intervall: "pro Monat",
     einleitung:
-      "Basic+ enthält alle Leistungen aus dem Basic-Paket und erweitert diese um zusätzliche Kontrollen und intensivere Prüfungen. Geeignet für Kunden, die über die Basiswartung hinaus eine genauere technische Überprüfung ihrer Anlage wünschen.",
+      "Basic+ enthält alle Leistungen aus dem Basic-Paket und erweitert diese um Onlineüberwachung und Effizienzcontrolling.",
     gruppen: [
       {
         titel: "Alles aus Basic",
@@ -130,19 +122,12 @@ export const paketeDetail: PaketDetail[] = [
       },
       {
         titel: "Zusätzlich in Basic+",
-        punkte: [
-          "Erweiterte Kontrolle der Anlage",
-          "Intensivere Prüfung nach Checkliste",
-          "Besondere Prüfungen bei Luft-Wasser-Wärmepumpen",
-          "Besondere Prüfungen bei Sole-Wasser-Wärmepumpen",
-          "Zusätzliche technische Kontrolle wichtiger Anlagenbereiche",
-        ],
+        punkte: ["Onlineüberwachung", "Effizienzcontrolling"],
       },
       {
         titel: "Service & Turnus",
         punkte: [
           "Wartung im jährlichen Turnus",
-          "Onlineüberwachung und Effizienzcontrolling inklusive",
           "Persönliche technische Betreuung durch SiRa",
         ],
       },
@@ -155,15 +140,21 @@ export const paketeDetail: PaketDetail[] = [
     preis: "59,00 €",
     intervall: "pro Monat",
     highlight: true,
-    badge: "Umfassendster Schutz",
+    badge: "Premium Vollkasko",
     einleitung:
-      "Das Premium-Paket ist das umfangreichste Wartungs- und Schutzpaket der SiRa Service GmbH. Es umfasst alle Leistungen aus Basic und Basic+ und bietet zusätzlich eine umfassende Absicherung der Wärmepumpenheizungsanlage.",
+      "Das Premium Vollkasko ist das umfangreichste Wartungs- und Schutzpaket der SiRa Service GmbH. Es umfasst alle Leistungen aus Basic+ und bietet zusätzlich eine umfassende Absicherung mit bis zu 15 Jahren Garantie.",
     gruppen: [
       {
-        titel: "Alles aus Basic & Basic+",
+        titel: "Alles aus Basic+",
+        punkte: ["Alle Leistungen aus Basic+"],
+      },
+      {
+        titel: "Zusätzlich im Premium Vollkasko",
         punkte: [
-          "Alle Leistungen aus Basic",
-          "Alle Leistungen aus Basic+",
+          "Jährliche technische Fernabfrage",
+          "Onlineüberwachung",
+          "Garantieverlängerung um jeweils 1 Jahr",
+          "Bis zu 15 Jahre Garantie möglich",
         ],
       },
       {
@@ -178,7 +169,8 @@ export const paketeDetail: PaketDetail[] = [
       {
         titel: "Garantie & Versicherung",
         punkte: [
-          "Garantie mit Wartungspaket",
+          "Garantieverlängerung um jeweils 1 Jahr",
+          "Bis zu 15 Jahre Garantie möglich",
           "Garantie- und Allgefahrenversicherung",
           "Montageversicherung enthalten",
           "Betreiberhaftpflicht enthalten",
@@ -196,10 +188,7 @@ export const paketeDetail: PaketDetail[] = [
       },
       {
         titel: "Service-Turnus",
-        punkte: [
-          "Jährliche technische Fernabfrage der Wärmepumpe",
-          "Große Wartung der Wärmepumpe alle 3 Jahre vor Ort",
-        ],
+        punkte: ["Große Wartung der Wärmepumpe alle 3 Jahre vor Ort"],
       },
     ],
     hinweis:
@@ -242,21 +231,43 @@ export const leistungsgruppen = [
   },
 ];
 
+export const efficiencySection = {
+  headline: "62 % aller Heizungsanlagen laufen ineffizient. Ihre auch?",
+  text: "Wir kümmern uns darum. Unser Mehrwert ist Ihr Ersparnis. Wir sorgen dafür, dass Ihre Wärmepumpe effizient läuft, zuverlässig arbeitet und Sie langfristig abgesichert sind.",
+  expertLine: "Ihr Wartungsexperte ist immer für Sie erreichbar.",
+  hours: [
+    { label: "Montag bis Freitag", time: "8:00 bis 20:00 Uhr" },
+    { label: "Samstag", time: "10:00 bis 20:00 Uhr" },
+    { label: "Sonntag", time: "10:00 bis 20:00 Uhr" },
+  ],
+} as const;
+
+export const heroTitle = {
+  line1: "Ultimatives Wartungspaket",
+  line2: "für Ihre Wärmepumpe.",
+} as const;
+
 export const heroClaim =
   "Wartung, technische Betreuung und Fernüberwachung für Ihre Wärmepumpenheizungsanlage.";
 
+export const heroHighlights = [
+  "Bis zu 15 Jahre Garantie im Premium Vollkasko",
+  "Ab 29 € im Monat",
+  "Jährliche Wartung",
+] as const;
+
 export const aboutText =
-  "Die SiRa Service GmbH ist Ihr Servicepartner für Wärmepumpenheizungsanlagen. Je nach gewähltem Paket übernehmen wir die regelmäßige Kontrolle, Wartung, technische Prüfung und Absicherung Ihrer Anlage. So erhalten Betreiber mehr Sicherheit, planbare Kosten und zuverlässigen Service.";
+  "Die SiRa Service GmbH ist Ihr Servicepartner für Wärmepumpenheizungsanlagen. Basic umfasst nur Wartung, Basic+ ergänzt Onlineüberwachung und Effizienzcontrolling. Im Premium Vollkasko sind alle Leistungen aus Basic+ enthalten – plus Fernabfrage, Garantieverlängerung und bis zu 15 Jahre Garantie.";
 
 export const firma = {
   marke: "SiRa Service GmbH",
   rechtsname: "SiRA zwanzigzehn GmbH",
   strasse: "Ronsdorfer Str. 53",
   plz: "40233 Düsseldorf",
-  telefon: "+49 211 651137",
-  telefonHref: "tel:+49211651137",
-  email: "info@hallo-sira.de",
-  emailHref: "mailto:info@hallo-sira.de",
+  telefon: "+49 211 655020",
+  telefonHref: "tel:+49211655020",
+  email: "office@siraservice.de",
+  emailHref: "mailto:office@siraservice.de",
   geschaeftsfuehrer: "Wolfgang Worms",
   hrb: "HRB 107951",
   registergericht: "Amtsgericht Düsseldorf",
@@ -274,6 +285,11 @@ export const navItems = [
   ...headerNavItems,
   { label: "Kontakt", href: "/kontakt" },
 ] as const;
+
+export const premiumIntro =
+  "Wir garantieren Ihre Effizienz für bis zu 15 Jahre – inklusive Onlineüberwachung und Notdienst.";
+
+export const premiumHighlightsHeading = "Unsere Highlights";
 
 export const premiumVorteile = [
   {
@@ -295,8 +311,7 @@ export const premiumVorteile = [
 ];
 
 export const zielgruppen = [
-  "Eigentümer von Wärmepumpen",
-  "Betreiber von Wärmepumpenheizungsanlagen",
+  "Betreiber/Eigentümer von Wärmepumpen",
   "Luft-Wasser-Wärmepumpen",
   "Sole-Wasser-Wärmepumpen",
   "Wasser-Wasser-Wärmepumpen",
@@ -308,7 +323,7 @@ export const zielgruppen = [
 export const vertragsdetails = [
   {
     titel: "Vertragslaufzeit",
-    text: "Die Vertragslaufzeit beträgt zunächst 12 Monate. Danach verlängert sich der Vertrag automatisch um jeweils 12 Monate, sofern keine Kündigung erfolgt. Die maximale Vertragslaufzeit beträgt 15 Jahre. Die Kündigungsfrist beträgt 6 Monate zum Vertragsende.",
+    text: "Die Vertragslaufzeit beträgt zunächst 36 Monate. Die Mindestlaufzeit für alle Pakete beträgt 3 Jahre. Danach verlängert sich der Vertrag automatisch um jeweils 12 Monate, sofern keine Kündigung erfolgt. Die maximale Vertragslaufzeit beträgt 15 Jahre. Die Kündigungsfrist beträgt 6 Monate zum Vertragsende.",
   },
   {
     titel: "Zahlung",
@@ -320,7 +335,7 @@ export const vertragsdetails = [
   },
   {
     titel: "Gewährleistung",
-    text: "Garantieleistungen bestehen, wenn die Wärmepumpe regelmäßig und fachgerecht gemäß Wartungsvertrag gewartet wird. Im Premiumvertrag sind die Leistungen vollständig integriert.",
+    text: "Basic und Basic+ umfassen ausschließlich Wartung ohne Garantie. Bis zu 15 Jahre Garantie gibt es nur im Premium Vollkasko, sofern die Wärmepumpe regelmäßig und fachgerecht gemäß Wartungsvertrag gewartet wird. Im Premium Vollkasko erhalten Sie von uns eine Versicherungspolice.",
   },
 ];
 
@@ -439,19 +454,19 @@ export const wizardSteps: WizardStep[] = [
       {
         value: "Basic",
         label: "Basic",
-        beschreibung: "Zuverlässige Basiswartung, 29,00 € / Monat",
+        beschreibung: "Nur Wartung, 29,00 € / Monat",
         icon: "shield",
       },
       {
         value: "Basic+",
         label: "Basic+",
-        beschreibung: "Erweiterte Prüfungen, 39,00 € / Monat",
+        beschreibung: "Onlineüberwachung & Effizienzcontrolling, 39,00 € / Monat",
         icon: "shieldPlus",
       },
       {
         value: "Premium",
         label: "Premium",
-        beschreibung: "Rundumschutz mit Versicherung, 59,00 € / Monat",
+        beschreibung: "Premium Vollkasko mit bis zu 15 Jahren Garantie, 59,00 € / Monat",
         icon: "crown",
       },
       {

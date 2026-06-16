@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     absolute: "SiRa Service GmbH | Wartung & Service für Wärmepumpen",
   },
   description:
-    "Wartungsverträge, technische Betreuung und Onlineüberwachung für Ihre Wärmepumpe. Drei Pakete mit planbaren monatlichen Kosten und langfristiger Absicherung.",
+    "Wartungsverträge für Ihre Wärmepumpe: Basic nur Wartung, Basic+ mit Fernüberwachung, Premium Vollkasko mit bis zu 15 Jahren Garantie.",
   alternates: { canonical: "/" },
 };
 

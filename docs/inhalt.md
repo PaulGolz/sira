@@ -304,8 +304,8 @@ Zustand der Anlage besser zu bewerten und den Service zuverlässig durchzuführe
 Ronsdorfer Str. 53
 40233 Düsseldorf
 
-**Telefon:** +49 211 651137
-**E-Mail:** info@hallo-sira.de
+**Telefon:** +49 211 655020
+**E-Mail:** office@siraservice.de
 
 **Vertreten durch:** Wolfgang Worms
 
@@ -319,7 +319,7 @@ Ronsdorfer Str. 53
 - Datenschutz-Hinweis mit Checkbox (Pflicht, Link zur Datenschutzerklärung)
 
 **Technik (vorerst):** Nur UI, **keine Sende-Logik** implementieren. Formular optisch
-vollständig, Submit-Button ohne Backend (später anbindbar an info@hallo-sira.de).
+vollständig, Submit-Button ohne Backend (später anbindbar an office@siraservice.de).
 
 CTA-Buttons scrollen zum Kontaktformular (`#kontakt`) bzw. verlinken auf `/kontakt`.
 
@@ -338,8 +338,8 @@ Vertreten durch:
 Wolfgang Worms
 
 Kontakt
-Telefon: +49 211 651137
-E-Mail: info@hallo-sira.de
+Telefon: +49 211 655020
+E-Mail: office@siraservice.de
 
 Umsatzsteuer-ID
 Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE351151402
@@ -384,8 +384,8 @@ SiRA zwanzigzehn GmbH
 Ronsdorfer Str. 53
 40233 Düsseldorf
 
-Telefon: +49 211 651137
-E-Mail: info@hallo-sira.de
+Telefon: +49 211 655020
+E-Mail: office@siraservice.de
 
 Vertreten durch: Wolfgang Worms
 

@@ -5,7 +5,7 @@ import { servicesSchema, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Wartungspakete: Basic, Basic+ und Premium",
   description:
-    "Die drei SiRa Wartungspakete für Wärmepumpen im Vergleich: Basic ab 29 €, Basic+ ab 39 € und Premium ab 59 € pro Monat – mit Garantie, Allgefahrenversicherung und Fernabfrage.",
+    "Die drei SiRa Wartungspakete für Wärmepumpen im Vergleich: Basic (nur Wartung) ab 29 €, Basic+ ab 39 € und Premium Vollkasko ab 59 € pro Monat – mit bis zu 15 Jahren Garantie.",
   alternates: { canonical: "/pakete" },
   openGraph: {
     title: "Wartungspakete für Wärmepumpen | SiRa Service GmbH",

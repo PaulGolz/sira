@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { VersionSwitcher } from "@/components/prototypes/VersionSwitcher";
 import { Wordmark } from "@/components/ui/Wordmark";
-import { heroClaim, leistungsgruppen, pakete } from "@/lib/content";
+import { heroClaim, leistungsgruppen, pakete, firma } from "@/lib/content";
 import { leistungsIcons } from "@/lib/icons";
 
 const nav = ["Leistungen", "Pakete", "Service", "Kontakt"];
@@ -14,11 +14,11 @@ export default function Version5() {
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-8 py-2.5">
           <span>Servicepartner für Wärmepumpenheizungsanlagen</span>
           <div className="flex items-center gap-8">
-            <a href="tel:+49211651137" className="hover:text-white">
-              +49 211 651137
+            <a href={firma.telefonHref} className="hover:text-white">
+              {firma.telefon}
             </a>
-            <a href="mailto:info@hallo-sira.de" className="hover:text-white">
-              info@hallo-sira.de
+            <a href={firma.emailHref} className="hover:text-white">
+              {firma.email}
             </a>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Version5() {
       {/* Header */}
       <header className="sticky top-0 z-40 border-b border-[#1f1f1f] bg-[#0e0e0e]/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-5 sm:px-8">
-          <Wordmark className="text-3xl" />
+          <Wordmark className="h-10" />
           <nav className="hidden items-center gap-10 md:flex">
             {nav.map((n) => (
               <a
@@ -138,7 +138,7 @@ export default function Version5() {
         <h2 className="text-3xl font-bold sm:text-4xl">Wartungspakete</h2>
         <p className="mt-4 max-w-2xl text-lg text-[#b5b5b5]">
           Drei klare Stufen, vom einfachen Wartungsvertrag bis zum umfassenden
-          Premium-Schutz mit Garantie und Allgefahrenversicherung.
+          Basic nur Wartung – bis zu 15 Jahre Garantie nur im Premium Vollkasko.
         </p>
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {pakete.map((p) => (

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { CutButton } from "@/components/ui/CutButton";
-import { paketeDetail, type PaketDetail } from "@/lib/content";
+import { paketeDetail, paketeHeading, type PaketDetail } from "@/lib/content";
 import { diagonalCut } from "@/lib/styles";
 
 function DetailCard({ paket }: { paket: PaketDetail }) {
@@ -104,15 +104,14 @@ export default function PaketePage() {
           <span className="text-sm font-extrabold uppercase tracking-widest text-[#4493f8]">
             Wartungsverträge
           </span>
-          <h1 className="mt-3 text-5xl font-extrabold uppercase leading-[0.92] sm:text-7xl">
-            Drei Pakete
-            <br />
-            <span className="text-[#4493f8]">im Detail</span>
+          <h1 className="mt-3 max-w-3xl text-3xl font-extrabold uppercase leading-tight sm:text-4xl">
+            {paketeHeading}
           </h1>
           <p className="mt-6 max-w-2xl text-base text-[#b5b5b5] sm:text-lg">
-            Vom einfachen Wartungsvertrag bis zum umfangreichen Premium-Schutz mit
-            Garantie, Allgefahrenversicherung, Fernabfrage und vollständiger
-            Kostenabsicherung. Wählen Sie genau das Paket, das zu Ihrer Anlage passt.
+            Basic umfasst nur Wartung. Basic+ ergänzt Onlineüberwachung und
+            Effizienzcontrolling. Im Premium Vollkasko sind alle Leistungen aus
+            Basic+ enthalten – plus Fernabfrage, Garantieverlängerung und bis zu
+            15 Jahre Garantie.
           </p>
         </section>
 
@@ -124,10 +123,11 @@ export default function PaketePage() {
           </div>
 
           <p className="mt-10 max-w-3xl text-sm leading-relaxed text-[#6a6a6a]">
-            Alle Preise verstehen sich pro Monat. Die Vertragslaufzeit beträgt zunächst
-            12 Monate und verlängert sich danach automatisch; die maximale Laufzeit
-            beträgt 15 Jahre. Die Zahlung erfolgt per SEPA-Lastschrift. Details finden
-            Sie in den Vertragsdetails auf der Startseite.
+            Alle Preise verstehen sich pro Monat. Die Mindestlaufzeit für alle Pakete
+            beträgt 3 Jahre. Die Vertragslaufzeit beträgt zunächst 36 Monate und
+            verlängert sich danach automatisch; die maximale Laufzeit beträgt 15
+            Jahre. Die Zahlung erfolgt per SEPA-Lastschrift. Details finden Sie in
+            den Vertragsdetails auf der Startseite.
           </p>
         </section>
 

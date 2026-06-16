@@ -15,7 +15,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1600px] px-5 py-16 sm:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Wordmark className="text-2xl" />
+            <Wordmark className="h-8" />
             <p className="mt-4 max-w-xs text-sm text-[#b5b5b5]">
               Wartungsverträge und technische Betreuung für
               Wärmepumpenheizungsanlagen.

@@ -9,7 +9,7 @@ export default function Version4() {
       {/* Header */}
       <header className="border-b border-[#1a1a1a]">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between px-6 py-5">
-          <Wordmark className="text-lg" />
+          <Wordmark className="h-6" />
           <nav className="hidden items-center gap-10 text-sm text-[#b5b5b5] md:flex">
             {["Leistungen", "Pakete", "Kontakt"].map((n) => (
               <a key={n} href="#" className="hover:text-white">
@@ -74,8 +74,8 @@ export default function Version4() {
             Wählen Sie Ihr Paket
           </h2>
           <p className="mt-4 text-[#b5b5b5]">
-            Drei klare Stufen, vom einfachen Wartungsvertrag bis zum umfassenden
-            Premium-Schutz.
+            Basic nur Wartung, Basic+ mit Fernüberwachung – bis zu 15 Jahre Garantie
+            nur im Premium Vollkasko.
           </p>
         </div>
 

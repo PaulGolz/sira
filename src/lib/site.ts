@@ -10,7 +10,7 @@ export const siteUrl = (
 export const siteName = "SiRa Service GmbH";
 
 export const siteDescription =
-  "SiRa Service GmbH – Ihr Servicepartner für Wärmepumpenheizungsanlagen. Wartungsverträge, technische Betreuung und Onlineüberwachung mit planbaren Kosten und langfristiger Absicherung.";
+  "SiRa Service GmbH – Ihr Servicepartner für Wärmepumpenheizungsanlagen. Basic nur Wartung, Basic+ mit Fernüberwachung, Premium Vollkasko mit bis zu 15 Jahren Garantie.";
 
 export const siteKeywords = [
   "Wärmepumpe Wartung",
